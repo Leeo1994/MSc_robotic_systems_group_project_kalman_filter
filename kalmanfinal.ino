@@ -41,23 +41,6 @@ class KalmanFilter {
         isFirstRun = false; //set to false after first reading. 
       }
  
- 
-//--------------BUILDING ERROR COVARIANCES--------------------
- 
-//IN SYSTEM:
- 
-//assume large steps occur every ___ timestamps. - 
- 
-//CHECK WHEN THE LARGE STEPS OCCUR AND BASE YOURSELF OFF OF THAT!
- 
-//ASK KORY FOR FULL GRADIENT RUN DATA. 
- 
-//ASK CHAT OR COPILOT -
-//1. IF I CORRECT MY MODEL TO ANTICIPATE A LARGE INCREASE EVERY ___ TIMESTAMPS AND TO DELTA IT AND EXPECT THE SAME INCREASE EVERY SAME TIMESTAMP - HOW DO I DEFINE ERROR COVARIANCE (Q) IN THIS MODEL?
-//2. CAN I INCORORATE BOTH ASSUMPTION OF DELTA INCREASE BASED ON LAST READING AND A LARGE INCREASE EVERY __ ?
- 
-//IN READING:
- 
 if (current_idx == 0){
 float mean = 0;
 float var = 0;
